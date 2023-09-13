@@ -81,7 +81,7 @@ C = (C1, C2_coef*bng2, C3_coef*bng2)
 numtr = bn256.optimal_ate(C[2], dv[1])
 dentr = bn256.gfp_12.inverse(bn256.optimal_ate(C[1], (dv[0])))
 DC = numtr*dentr*C[0]
-print(DC)
+#print('encrypt-decrypt sucess: ', DC==M_gfp_12)
 
 ttn=time.time()
 if M_gfp_12==DC:
