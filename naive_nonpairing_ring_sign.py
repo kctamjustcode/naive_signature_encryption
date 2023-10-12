@@ -46,7 +46,7 @@ x = [random.randint(1, n-1) for i in range(len(e))]
 y = [x[i]**e[i] %n for i in range(len(e))]
 y[s] = 0
 
-y_s =  v*fp_inv(k, n) - sum(y) %n #simplest
+y_s =  v*fp_inv(k, n) - sum(y) %n
 x[s] = y_s ** e_inv[s] %n
 
 ring_sign = (m, e, v, x)
