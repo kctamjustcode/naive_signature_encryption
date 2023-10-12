@@ -27,7 +27,7 @@ def gfp_12_prod(vl: list):
     return vf
 
 
-length = 8
+length = 3
 
 pri_key_list = [random.randint(1, bn256.order-1) for i in range(length)]
 pub_key_list = [pri_key_list[i]* bn256.twist_G for i in range(length)]
